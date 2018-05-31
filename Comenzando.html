@@ -11,25 +11,39 @@
 <link href="CSS/Estilos.css" type="text/css" rel="stylesheet">
   </head>
 	<body>
+	<div class="Contenido">
 	 <header>
- <p>Comenzando con la Fotografía.</p>
- </header> 
-	<navbar id="links">
-	<a href="Comenzand_ con_la_Fotografía.html">INICIO</a>
-	<a href="Paisajes.html" target="_blank">PAISAJES</a>
-	<a href="" target="_blank">RETRATOS</a>
-	</navbar>
+<nav class="titulo">
+<h1>Comenzando con la fotografia</h1>
+</nav>
+<nav class="menu">
+<a href="Comenzando.HTML" target="_blank" class="seleccion">Inicio</a>
+<a href="paisajes.html">Paisajes</a>
+<a href="retratos.html">Retratos</a>
+</nav>
+</header>
 	<br>
-	<br>
-	<div id="Imagen_Principal">
-	<div class="japon"><img src="IMG/paisaje3.JPG" title="Imagen Principal" alt="Imagen Principla"></div>
-	</div>
-	<br>
+	<figure id="Imagen_Principal">
+	<figcaption>Comenzando con la Fotografía</figcaption>
+	<div class="japon"><img src="IMG/paisaje3.JPG" title="Imagen Principal" alt="Imagen Principla" width="40%"></div>
+	</figure>
 			<div id="Imagen_secundaria">
-			<div class="paisajes"> <img src="IMG/paisaje1.JPG" title="retratos" alt="retratos" width="100%"> </div>
-			<div class="retratos"> <img src="IMG/retrato3.JPG" title="retratos" alt="retratos" width="100%"> </div>
+				<div class="paisajes"> 
+				<picture> 
+				<source media="(min-width: 768px) srcset="IMG/paisaje1.JPG">
+				<source media="(min-width: 480px) srcset="IMG/paisaje1.JPG">
+				<img src="IMG/paisaje1.JPG" width="90%">
+				</picture>
+				</div>
+					<div class="retratos"> 
+					<picture> 
+					<source media="(min-width: 768px) srcset="IMG/retrato3.JPG">
+					<source media="(min-width: 480px) srcset="IMG/retrato3.JPG">
+					<img src="IMG/retrato3.JPG" width="90%">
+					</picture>
+					</div>
 			</div>
-			<br>
+	<br>
 	<footer>
 <div class="uno">
 <h1>Contacto</h1>
@@ -53,6 +67,7 @@
 <p>Duvan Parra &copy; Copyright 2018</p>
 </div>
 </footer>
+</div>
 </body>
 	
 </html>
